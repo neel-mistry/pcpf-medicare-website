@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS  -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        p {
+            margin: 0%;
+        }
+
+        a:link,
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        /* -----------text----------- */
+        .bold-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 65px;
+            margin: 0%;
+            color: white;
+        }
+
+        .regular-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            margin: 0%;
+            color: white;
+        }
+
+        .heading-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 79px;
+
+
+        }
+
+        /* -----------nav bar----------- */
+        .nav-bar {
+            background-color: #DDDDDD;
+            height: 100px;
+            left: 0px;
+            top: 0px;
+            margin: 0px;
+        }
+
+        .logo-img {
+            padding-left: 64px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
+        /* -----------home----------- */
+        .tag-line {
+            padding: 299px 704px 263px 95px;
+        }
+
+        .doc-image {
+            position: absolute;
+            width: 520px;
+            height: 779px;
+            left: 1240px;
+            top: 150px;
+
+        }
+
+        /* -----------appointment----------- */
+        .appointment {
+            background-color: white;
+        }
+
+        .baa-text {
+            padding-top: 75px;
+        }
+
+        .appointment-table {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            margin: 0%;
+            padding-bottom: 100px;
+        }
+
+        .text-font{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            margin: 0%;
+        }
+
+        .footer{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            margin: 0%;
+            padding-top: 20px;
+        }
+
+        .btn {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 14;
+            -moz-border-radius: 14;
+            border-radius: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400px;
+            color: #ffffff;
+            font-size: 26px;
+            background: #2A7FBA;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #2A7FBA;
+            text-decoration: none;
+        }
+
+        .btn-make-app {
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+    </style>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>MediCare Clinic</title>
+
+</head>
+
+<body style="background-color: #49535A;">
+    <div class="nav-bar">
+        <img src="images/logo.png" alt="medi-care-logo" class="logo-img">
+    </div>
+
+    <div class="home">
+        <div class="tag-line">
+            <div class="bold-text">
+                <p>Bringing Health</p>
+            </div>
+            <div class="regular-text">
+                <p>to life for the whole family</p>
+            </div>
+            <button type="button" class="btn btn-make-app"><a href="#appointment">Make an appointment</a></button>
+        </div>
+
+        <img src="images/doc-img-2.png" alt="doc-image" class="doc-image">
+
+    </div>
+
+    <div id="appointment" class="appointment">
+        <p class="heading-text baa-text">Book an appointment</p>
+
+        <div class="appointment-table">
+            <table align="center" style="border: 2px solid rgb(197, 197, 197);">
+                <form action="connect.php" method="post" class="text_font">
+                    <tr>
+                        <td style="padding-left: 50px; padding-top: 50px;"><label for="firstName">First Name</label></td>
+                        <td style="padding-right: 50px; padding-top: 50px; padding-left: 20px;"><label for="lastName">Last Name</label></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px;  padding-bottom: 25px;">
+                            <input name="firstName" type="text" class="text-font" placeholder="First Name">
+                        </td>
+                        <td style="padding-right: 50px; padding-left: 20px;  padding-bottom: 25px;">
+                            <input name="lastName" type="text" class="text-font" placeholder="Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px;"><label for="Contact_no">Contact Number</label></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px; padding-bottom: 25px;" colspan="3"><input name="Contact_no" type="text" size="50" 
+                            class="text-font" placeholder="Contact Number"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px;"><label for="Email_id">Email Id</label></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px; padding-bottom: 25px;" colspan="3"><input name="email" type="text" size="50" 
+                            class="text-font" placeholder="Email Id"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px;"><label for="Subject"> Subject</label></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px; padding-bottom: 25px;" colspan="3"><input name="Subject" type="text" size="50" 
+                            class="text-font" placeholder="Subject"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px;"><label for="Description">Description</label></td>
+                    </tr>
+                    <tr>
+                        <td  style="padding-left: 50px; padding-bottom: 25px;" colspan="3">
+                            <textarea id="Description" name="Description" rows="3" cols="53" \
+                            class="text-font" placeholder="Describe your problem"></textarea>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 50px; padding-bottom: 50px;" colspan="3"><input type="submit" size="50" style="padding: 10px 35px 10px 35px;"></td>
+                    </tr>
+                </form>
+            </table>
+            <center>
+                <p class="footer">----- Designed by Neel Mistry -----</p>
+            </center>
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
